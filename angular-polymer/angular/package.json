@@ -10,7 +10,8 @@
     "test": "ng test",
     "pree2e": "webdriver-manager update --standalone false --gecko false",
     "e2e": "protractor",
-    "electron": "ng build --prod; cp electron/index.html dist/index.html; electron electron/main.js"
+    "electron": "ng build --prod; cp electron/index.html dist/index.html; electron electron/main.js",
+    "cordova": "rm -Rf cordovaApp; cordova create cordovaApp; cd cordovaApp; rm -Rf www; sudo ln -s ../dist/ www; rm ../dist/*.gz; cordova platform add ios; cordova run ios; cordova platform add android; cordova run android"
   },
   "private": true,
   "dependencies": {
@@ -29,10 +30,12 @@
   },
   "devDependencies": {
     "@angular/compiler-cli": "^2.3.1",
+    "@types/cordova": "0.0.34",
     "@types/jasmine": "2.5.38",
     "@types/node": "^6.0.42",
     "angular-cli": "1.0.0-beta.24",
     "codelyzer": "~2.0.0-beta.1",
+    "cordova": "^6.4.0",
     "jasmine-core": "2.5.2",
     "jasmine-spec-reporter": "2.5.0",
     "karma": "1.2.0",

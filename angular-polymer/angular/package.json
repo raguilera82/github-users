@@ -31,11 +31,13 @@
   "devDependencies": {
     "@angular/compiler-cli": "^2.3.1",
     "@types/cordova": "0.0.34",
+    "@types/electron": "^1.4.30",
     "@types/jasmine": "2.5.38",
     "@types/node": "^6.0.42",
     "angular-cli": "1.0.0-beta.24",
     "codelyzer": "~2.0.0-beta.1",
     "cordova": "^6.4.0",
+    "electron": "^1.4.13",
     "jasmine-core": "2.5.2",
     "jasmine-spec-reporter": "2.5.0",
     "karma": "1.2.0",

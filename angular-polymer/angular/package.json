@@ -11,7 +11,7 @@
     "pree2e": "webdriver-manager update --standalone false --gecko false",
     "e2e": "protractor",
     "electron": "ng build --prod; cp electron/index.html dist/index.html; electron electron/main.js",
-    "cordova": "rm -Rf cordovaApp; cordova create cordovaApp; cd cordovaApp; rm -Rf www; sudo ln -s ../dist/ www; rm ../dist/*.gz; cordova platform add ios; cordova run ios; cordova platform add android; cordova run android",
+    "cordova": "ng build --prod; cp electron/index.html dist/index.html; rm -Rf cordovaApp; cordova create cordovaApp; cd cordovaApp; rm -Rf www; sudo ln -s ../dist/ www; rm ../dist/*.gz; cordova platform add ios; cordova run ios; cordova platform add android; cordova run android",
     "polymer": "npm install polymer-lib --registry=http://localhost:8081/repository/npm-internal/"
   },
   "private": true,

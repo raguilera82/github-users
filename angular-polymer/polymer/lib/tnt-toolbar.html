@@ -9,15 +9,17 @@
                 color: var(--tnt-toolbar-color, white);
             }
         </style>
-        
-        <app-toolbar>
-            <div main-title>
-                [[title]]
-            </div>
-        </app-toolbar>
 
-    </template>
-    <script>
+        <app-header-layout>
+            <app-header fixed>
+                <app-toolbar>
+                    <div main-title>[[title]]</div>
+                </app-toolbar>
+            </app-header>
+        </app-header-layout>
+
+</template>
+<script>
         Polymer({
             is: 'tnt-toolbar'
         });

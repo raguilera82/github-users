@@ -6,17 +6,17 @@
 2 info using npm@3.10.3
 3 info using node@v6.4.0
 4 verbose run-script [ 'prepublish', 'publish', 'postpublish' ]
-5 info lifecycle polymer-lib@1.0.5~prepublish: polymer-lib@1.0.5
-6 silly lifecycle polymer-lib@1.0.5~prepublish: no script for prepublish, continuing
-7 info lifecycle polymer-lib@1.0.5~publish: polymer-lib@1.0.5
-8 verbose lifecycle polymer-lib@1.0.5~publish: unsafe-perm in lifecycle true
-9 verbose lifecycle polymer-lib@1.0.5~publish: PATH: /Users/raguilera82/.nvm/versions/node/v6.4.0/lib/node_modules/npm/bin/node-gyp-bin:/Users/raguilera82/Desktop/github-users/angular-polymer/polymer/node_modules/.bin:/Users/raguilera82/.nvm/versions/node/v6.4.0/bin:/Users/raguilera82/.nvm/versions/node/v0.12.7/bin:/Users/raguilera82/npm/bin:/usr/local/bin:/Users/raguilera82/Developer/Sencha/CMD/Sencha/Cmd/4.0.4.84:/Users/raguilera82/.nvm/versions/node/v6.4.0/bin:/Users/raguilera82/Developer/Sencha/CMD/bin/Sencha/Cmd/4.0.2.67:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/bin:/Users/raguilera82/Developer/apache-ant-1.9.2/bin:/Users/raguilera82/Developer/apache-maven-3.1.1/bin:/Users/raguilera82/Developer/android-sdk-macosx/tools:/Users/raguilera82/Developer/packer_0.7.1_darwin_amd64:/Users/raguilera82/Developer/android-sdk-macosx/platform-tools:/Users/raguilera82/Developer/android-sdk-macosx/build-tools/19.0.0:/Users/raguilera82/Developer/mongodb-osx-x86_64-3.2.7/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/PrivateFrameworks/DTDeviceKitBase.framework/Versions/A/Resources:/Users/raguilera82/npm/bin:/usr/local/bin:/Users/raguilera82/Developer/Sencha/CMD/Sencha/Cmd/4.0.4.84:/Users/raguilera82/Developer/Sencha/CMD/bin/Sencha/Cmd/4.0.2.67:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/bin:/Users/raguilera82/Developer/apache-ant-1.9.2/bin:/Users/raguilera82/Developer/apache-maven-3.1.1/bin:/Users/raguilera82/Developer/android-sdk-macosx/tools:/Users/raguilera82/Developer/packer_0.7.1_darwin_amd64:/Users/raguilera82/Developer/android-sdk-macosx/platform-tools:/Users/raguilera82/Developer/android-sdk-macosx/build-tools/19.0.0:/Users/raguilera82/Developer/mongodb-osx-x86_64-3.2.7/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/PrivateFrameworks/DTDeviceKitBase.framework/Versions/A/Resources:/Users/raguilera82/.gem/bin:/Users/raguilera82/npm/bin:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/bin:/Users/raguilera82/Developer/apache-maven-3.1.1/bin:/Users/raguilera82/Developer/apache-ant-1.9.2/bin:/Users/raguilera82/Developer/android-sdk-macosx/tools:/Users/raguilera82/Developer/android-sdk-macosx/platform-tools:/Users/raguilera82/Developer/android-sdk-macosx/build-tools/19.0.0:/Users/raguilera82/Developer/mongodb-osx-x86_64-2.4.9/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/PrivateFrameworks/DTDeviceKitBase.framework/Versions/A/Resources:/Users/raguilera82/Developer/Sencha/CMD/Sencha/Cmd/4.0.4.84:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands
-10 verbose lifecycle polymer-lib@1.0.5~publish: CWD: /Users/raguilera82/Desktop/github-users/angular-polymer/polymer
-11 silly lifecycle polymer-lib@1.0.5~publish: Args: [ '-c',
+5 info lifecycle polymer-lib@1.0.7~prepublish: polymer-lib@1.0.7
+6 silly lifecycle polymer-lib@1.0.7~prepublish: no script for prepublish, continuing
+7 info lifecycle polymer-lib@1.0.7~publish: polymer-lib@1.0.7
+8 verbose lifecycle polymer-lib@1.0.7~publish: unsafe-perm in lifecycle true
+9 verbose lifecycle polymer-lib@1.0.7~publish: PATH: /Users/raguilera82/.nvm/versions/node/v6.4.0/lib/node_modules/npm/bin/node-gyp-bin:/Users/raguilera82/Desktop/github-users/angular-polymer/polymer/node_modules/.bin:/Users/raguilera82/.nvm/versions/node/v6.4.0/bin:/Users/raguilera82/.nvm/versions/node/v0.12.7/bin:/Users/raguilera82/npm/bin:/usr/local/bin:/Users/raguilera82/Developer/Sencha/CMD/Sencha/Cmd/4.0.4.84:/Users/raguilera82/.nvm/versions/node/v6.4.0/bin:/Users/raguilera82/Developer/Sencha/CMD/bin/Sencha/Cmd/4.0.2.67:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/bin:/Users/raguilera82/Developer/apache-ant-1.9.2/bin:/Users/raguilera82/Developer/apache-maven-3.1.1/bin:/Users/raguilera82/Developer/android-sdk-macosx/tools:/Users/raguilera82/Developer/packer_0.7.1_darwin_amd64:/Users/raguilera82/Developer/android-sdk-macosx/platform-tools:/Users/raguilera82/Developer/android-sdk-macosx/build-tools/19.0.0:/Users/raguilera82/Developer/mongodb-osx-x86_64-3.2.7/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/PrivateFrameworks/DTDeviceKitBase.framework/Versions/A/Resources:/Users/raguilera82/npm/bin:/usr/local/bin:/Users/raguilera82/Developer/Sencha/CMD/Sencha/Cmd/4.0.4.84:/Users/raguilera82/Developer/Sencha/CMD/bin/Sencha/Cmd/4.0.2.67:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/bin:/Users/raguilera82/Developer/apache-ant-1.9.2/bin:/Users/raguilera82/Developer/apache-maven-3.1.1/bin:/Users/raguilera82/Developer/android-sdk-macosx/tools:/Users/raguilera82/Developer/packer_0.7.1_darwin_amd64:/Users/raguilera82/Developer/android-sdk-macosx/platform-tools:/Users/raguilera82/Developer/android-sdk-macosx/build-tools/19.0.0:/Users/raguilera82/Developer/mongodb-osx-x86_64-3.2.7/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/PrivateFrameworks/DTDeviceKitBase.framework/Versions/A/Resources:/Users/raguilera82/.gem/bin:/Users/raguilera82/npm/bin:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/bin:/Users/raguilera82/Developer/apache-maven-3.1.1/bin:/Users/raguilera82/Developer/apache-ant-1.9.2/bin:/Users/raguilera82/Developer/android-sdk-macosx/tools:/Users/raguilera82/Developer/android-sdk-macosx/platform-tools:/Users/raguilera82/Developer/android-sdk-macosx/build-tools/19.0.0:/Users/raguilera82/Developer/mongodb-osx-x86_64-2.4.9/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/PrivateFrameworks/DTDeviceKitBase.framework/Versions/A/Resources:/Users/raguilera82/Developer/Sencha/CMD/Sencha/Cmd/4.0.4.84:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands
+10 verbose lifecycle polymer-lib@1.0.7~publish: CWD: /Users/raguilera82/Desktop/github-users/angular-polymer/polymer
+11 silly lifecycle polymer-lib@1.0.7~publish: Args: [ '-c',
 11 silly lifecycle   'npm publish --registry=http://localhost:8081/repository/npm-internal/' ]
-12 silly lifecycle polymer-lib@1.0.5~publish: Returned: code: 1  signal: null
-13 info lifecycle polymer-lib@1.0.5~publish: Failed to exec publish script
-14 verbose stack Error: polymer-lib@1.0.5 publish: `npm publish --registry=http://localhost:8081/repository/npm-internal/`
+12 silly lifecycle polymer-lib@1.0.7~publish: Returned: code: 1  signal: null
+13 info lifecycle polymer-lib@1.0.7~publish: Failed to exec publish script
+14 verbose stack Error: polymer-lib@1.0.7 publish: `npm publish --registry=http://localhost:8081/repository/npm-internal/`
 14 verbose stack Exit status 1
 14 verbose stack     at EventEmitter.<anonymous> (/Users/raguilera82/.nvm/versions/node/v6.4.0/lib/node_modules/npm/lib/utils/lifecycle.js:242:16)
 14 verbose stack     at emitTwo (events.js:106:13)
@@ -26,16 +26,16 @@
 14 verbose stack     at ChildProcess.emit (events.js:191:7)
 14 verbose stack     at maybeClose (internal/child_process.js:852:16)
 14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:215:5)
-15 verbose pkgid polymer-lib@1.0.5
+15 verbose pkgid polymer-lib@1.0.7
 16 verbose cwd /Users/raguilera82/Desktop/github-users/angular-polymer/polymer
 17 error Darwin 16.3.0
 18 error argv "/Users/raguilera82/.nvm/versions/node/v6.4.0/bin/node" "/Users/raguilera82/.nvm/versions/node/v6.4.0/bin/npm" "run" "publish"
 19 error node v6.4.0
 20 error npm  v3.10.3
 21 error code ELIFECYCLE
-22 error polymer-lib@1.0.5 publish: `npm publish --registry=http://localhost:8081/repository/npm-internal/`
+22 error polymer-lib@1.0.7 publish: `npm publish --registry=http://localhost:8081/repository/npm-internal/`
 22 error Exit status 1
-23 error Failed at the polymer-lib@1.0.5 publish script 'npm publish --registry=http://localhost:8081/repository/npm-internal/'.
+23 error Failed at the polymer-lib@1.0.7 publish script 'npm publish --registry=http://localhost:8081/repository/npm-internal/'.
 23 error Make sure you have the latest version of node.js and npm installed.
 23 error If you do, this is most likely a problem with the polymer-lib package,
 23 error not with npm itself.

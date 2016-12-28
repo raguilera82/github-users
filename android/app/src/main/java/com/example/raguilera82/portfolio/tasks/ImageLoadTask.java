@@ -2,6 +2,7 @@ package com.example.raguilera82.portfolio.tasks;
 
 import android.graphics.Bitmap;
 import android.os.AsyncTask;
+import android.util.Log;
 import android.widget.ImageView;
 
 import com.example.raguilera82.portfolio.NetworkUtils;
@@ -23,6 +24,7 @@ public class ImageLoadTask extends AsyncTask<Void, Void, Bitmap> {
     @Override
     protected Bitmap doInBackground(Void... params) {
         try {
+            Log.d("console", "Cargo url: " + url);
             return NetworkUtils.getInstance().getImageFromURL(url);
         } catch (Exception e) {
             e.printStackTrace();

@@ -57,6 +57,7 @@ public class GithubQueryTask extends AsyncTask<URL, Void, String> {
                     String login = userObject.getString("login");
                     String avatarUrl = userObject.getString("avatar_url");
                     User user = new User(login, avatarUrl);
+                    Log.d("console", user.getLogin() + " ---- " + user.getAvatarUrl());
                     users.add(user);
                 }
                 listView.setAdapter(new UsersAdapter(context, users));

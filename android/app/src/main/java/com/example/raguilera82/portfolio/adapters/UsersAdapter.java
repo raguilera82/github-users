@@ -1,6 +1,7 @@
 package com.example.raguilera82.portfolio.adapters;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -35,9 +36,11 @@ public class UsersAdapter extends ArrayAdapter<User> {
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
         View rowView = inflater.inflate(R.layout.list_mobile, parent, false);
-        TextView textView = (TextView) rowView.findViewById(R.id.label);
+        TextView loginText = (TextView) rowView.findViewById(R.id.login);
+        loginText.setText(values.get(position).getLogin());
         ImageView imageView = (ImageView) rowView.findViewById(R.id.logo);
-        textView.setText(values.get(position).getLogin());
+
+        Log.d("console", "Login: " + loginText.getText());
 
 
         new ImageLoadTask(values.get(position).getAvatarUrl(), imageView).execute();

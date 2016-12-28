@@ -1,0 +1,25 @@
+<dom-module id="tnt-card">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+
+      paper-card {
+        background-color: var(--tnt-card-background, red);
+        color: var(--tnt-card-color, white);
+      }
+
+    </style>
+
+    <paper-card image="[[avatar]]">
+      <div class="card-content">Login: [[login]]</div>
+    </paper-card>
+
+  </template>
+  <script>
+    Polymer({
+      is: 'tnt-card'
+    });
+  </script>
+</dom-module>

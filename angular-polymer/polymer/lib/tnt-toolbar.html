@@ -1,0 +1,25 @@
+<dom-module id="tnt-toolbar">
+    <template>
+        <style>
+            :host {
+                display: block;
+            }
+            app-toolbar {
+                background-color: var(--tnt-toolbar-background, red);
+                color: var(--tnt-toolbar-color, white);
+            }
+        </style>
+        
+        <app-toolbar>
+            <div main-title>
+                [[title]]
+            </div>
+        </app-toolbar>
+
+    </template>
+    <script>
+        Polymer({
+            is: 'tnt-toolbar'
+        });
+    </script>
+</dom-module>

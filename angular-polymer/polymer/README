@@ -1,0 +1,13 @@
+==Use the library
+
+We need a Nexus 3 instance. We can run this instance with docker
+
+$> docker-compose up
+
+$> npm login
+user: admin
+pass: admin123
+email: admin@example.org
+
+$> npm run publish
+

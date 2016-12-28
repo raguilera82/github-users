@@ -1,0 +1,23 @@
+<dom-module id="tnt-hello">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+
+    <h1>Hello [[name]]</h1>
+
+  </template>
+  <script>
+    Polymer({
+      is: 'tnt-hello',
+      properties: {
+        name: {
+          type: String,
+          value: 'Por defecto'
+        }
+      }
+    });
+  </script>
+</dom-module>

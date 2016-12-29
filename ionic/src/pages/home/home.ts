@@ -29,7 +29,10 @@ export class HomePage implements OnInit {
           this.updateMsg = 'Hay una actualización ';
           this.deploy.download().then(() => {
               this.updateMsg = 'Se ha aplicado la nueva actualización ';
-              return this.deploy.extract();
+              return this.deploy.extract().then(() => {
+                this.deploy.load();
+                console.log('La aplicación se ha actualizado');
+              });
             });
         }
       }

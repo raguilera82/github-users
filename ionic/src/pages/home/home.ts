@@ -2,6 +2,7 @@ import { Github } from './../../providers/github';
 import { Component, OnInit } from '@angular/core';
 
 import { NavController } from 'ionic-angular';
+import { Deploy } from '@ionic/cloud-angular';
 
 @Component({
   selector: 'page-home',
@@ -9,14 +10,30 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage implements OnInit {
 
+  updateMsg: string;
+
   users: any[];
 
-  constructor(public navCtrl: NavController, private github:Github) {
+  constructor(public navCtrl: NavController, private github:Github, private deploy: Deploy) {
     
   }
 
   ngOnInit() {
     this.getUsers();
+  }
+
+  update() {
+    this.deploy.check().then(
+      (snapshotAvailable: boolean) => {
+        if (snapshotAvailable) {
+          this.updateMsg = 'Hay una actualización ';
+          this.deploy.download().then(() => {
+              this.updateMsg = 'Se ha aplicado la nueva actualización ';
+              return this.deploy.extract();
+            });
+        }
+      }
+    )
   }
 
   getUsers(): void {

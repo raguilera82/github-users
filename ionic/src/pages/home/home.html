@@ -1,12 +1,14 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Github Users
+      Github Users Deploy OTra
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
+  <button (click)="update()" ion-button full>Actualizar</button>
+  <p *ngIf="updateMsg">{{updateMsg}}</p>
   <ion-list *ngIf="users">
   <ion-item  *ngFor="let user of users">
     <ion-thumbnail item-left>

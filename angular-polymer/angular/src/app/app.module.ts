@@ -1,5 +1,5 @@
 import { ListComponent } from './github-users/list/list.component';
-import { GithubUsersModule } from './github-users/github-users.module';
+import { GithubUsersModule } from '@raguilera82/angular-github-library';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { FormsModule } from '@angular/forms';

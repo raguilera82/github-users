@@ -12,7 +12,8 @@
     "e2e": "protractor",
     "electron": "ng build --prod; cp electron/index.html dist/index.html; electron electron/main.js",
     "cordova": "ng build --prod; cp electron/index.html dist/index.html; rm -Rf cordovaApp; cordova create cordovaApp; cd cordovaApp; rm -Rf www; sudo ln -s ../dist/ www; rm ../dist/*.gz; cordova platform add ios; cordova run ios; cordova platform add android; cordova run android",
-    "polymer": "npm install polymer-lib --registry=http://localhost:8081/repository/npm-internal/"
+    "polymer": "npm install polymer-lib --registry=http://localhost:8081/repository/npm-internal/",
+    "build:aot": "ngc -p src/tsconfig.json"
   },
   "private": true,
   "dependencies": {
@@ -24,7 +25,7 @@
     "@angular/platform-browser": "^2.3.1",
     "@angular/platform-browser-dynamic": "^2.3.1",
     "@angular/router": "^3.3.1",
-    "@raguilera82/angular-github-library": "^1.0.1",
+    "@raguilera82/angular-github-library": "^2.0.2",
     "core-js": "^2.4.1",
     "rxjs": "^5.0.1",
     "ts-helpers": "^1.1.1",

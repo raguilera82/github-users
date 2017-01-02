@@ -1,0 +1,15 @@
+<!--<StackLayout class="p-20">
+    <Label text="Tap the button" class="h1 text-center"></Label>
+    <Button text="TAP" (tap)="onTap()" class="btn btn-primary btn-active"></Button>
+    <Label [text]="message" class="h2 text-center" textWrap="true"></Label>
+</StackLayout> -->
+
+<ListView [items]="users" >
+    <template let-item="item" let-i="index" let-odd="odd" let-even="even">
+        <StackLayout [class.odd]="odd" [class.even]="even">
+            <Label [text]='"index: " + i'></Label>
+            <Label [text]='"[" + item.login +"] "'></Label>
+            <Image src="{{item.avatar_url}}"></Image>
+        </StackLayout>
+    </template>
+</ListView>

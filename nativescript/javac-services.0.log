@@ -23,3 +23,4 @@ org.javacs.NoJavaConfigException: Can't find configuration file for /Users/ragui
 	at org.javacs.Main.run(Main.java:150)
 	at org.javacs.Main.main(Main.java:69)
 
+INFO	?	main	2017-01-02T11:36:30.970Z	org.javacs.Main#run	Connection closed

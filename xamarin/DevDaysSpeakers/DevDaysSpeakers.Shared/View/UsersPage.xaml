@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DevDaysSpeakers.View.UsersPage"
+             Title="Users">
+
+
+	<StackLayout Spacing="0">
+
+		<Button Text="Sync Users" Command="{Binding GetUsersCommand}"/>
+
+		<ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}"/>
+
+		<ListView x:Name="ListViewUsers" ItemsSource="{Binding Users}">
+
+			<ListView.ItemTemplate>
+
+				<DataTemplate>
+
+					<ImageCell Text="{Binding Login}"
+							ImageSource="{Binding Avatar}"/>
+
+				</DataTemplate>
+				
+			</ListView.ItemTemplate>
+			
+		</ListView>
+		
+	</StackLayout>
+	
+
+</ContentPage>

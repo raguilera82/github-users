@@ -1,7 +1,7 @@
-import { Github } from './../../providers/github';
+import { ProxyService } from '@raguilera82/angular-github-library';
 import { Component, OnInit } from '@angular/core';
 
-import { NavController } from 'ionic-angular';
+import { NavController, Platform } from 'ionic-angular';
 import { Deploy } from '@ionic/cloud-angular';
 
 @Component({
@@ -14,11 +14,13 @@ export class HomePage implements OnInit {
 
   users: any[];
 
-  constructor(public navCtrl: NavController, private github:Github, private deploy: Deploy) {
-    
-  }
+  isMobile: any;
+
+  constructor(public navCtrl: NavController, private github:ProxyService, private deploy: Deploy, private platform: Platform) {}
 
   ngOnInit() {
+    this.isMobile = this.platform.is('mobile')
+    console.log(this.isMobile);
     this.getUsers();
   }
 

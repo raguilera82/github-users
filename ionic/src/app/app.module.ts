@@ -4,6 +4,7 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { CloudSettings, CloudModule } from '@ionic/cloud-angular';
+import { GithubModule } from '@raguilera82/angular-github-library'
 
 const cloudSettings: CloudSettings = {
   'core': {
@@ -18,7 +19,8 @@ const cloudSettings: CloudSettings = {
   ],
   imports: [
     IonicModule.forRoot(MyApp),
-    CloudModule.forRoot(cloudSettings)
+    CloudModule.forRoot(cloudSettings),
+    GithubModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [

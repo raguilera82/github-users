@@ -1,4 +1,3 @@
-import { Github } from './../providers/github';
 import { NgModule, ErrorHandler, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
@@ -27,7 +26,7 @@ const cloudSettings: CloudSettings = {
     MyApp,
     HomePage
   ],
-  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}, Github],
+  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule {}

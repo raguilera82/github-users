@@ -4,6 +4,8 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { CloudSettings, CloudModule } from '@ionic/cloud-angular';
 import { GithubModule } from '@raguilera82/angular-github-library'
+import { TabsPage } from '../pages/tabs/tabs';
+import { CameraPage } from '../pages/camera/camera';
 
 const cloudSettings: CloudSettings = {
   'core': {
@@ -14,7 +16,9 @@ const cloudSettings: CloudSettings = {
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    TabsPage,
+    CameraPage
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -24,7 +28,9 @@ const cloudSettings: CloudSettings = {
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    TabsPage,
+    CameraPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
